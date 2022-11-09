@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div>
+        <img class="roundImg" src="images/Vincent_van_Gogh_-_Head_of_a_skeleton_with_a_burning_cigarette_-_Google_Art_Project.jpg" />
+        <p>describe image above</p>
+    </div>
+
+    <div>
+        <img class="roundImg" src="images/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg" />
+        <p>describe image above</p>
+    </div>
+
+    <div>
+        <img class="roundImg" src="images/534f023bbfb78f20b9e9e53b8bf6c9e81b29a8e6.jpg" />
+        <p>describe image above</p>
+    </div>
+
+
+    <script>
+        window.onload = function()
+        {
+            const paragraph = document.getElementsByTagName("p");
+            for(let i = 0; i < paragraph.length; i++)
+            {
+                paragraph[i].style.border = "thin solid black";
+            }
+        }
+    </script>
+</body>
+
+</html>

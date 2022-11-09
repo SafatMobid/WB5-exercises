@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">Home</a>
+    <div class="imageGroup">
+        <img src="images/1_tOfLMoBL4B83gINd54gjJg.png"></img>
+        <p>Meme 1</p>
+    </div>
+
+    <div class="imageGroup">
+        <img src="images/Ee8KvmFWoAIGVzb.jpg"></img>
+        <p>Meme 2</p>
+    </div>
+
+    <div class="imageGroup">
+        <img src="images/latsyqzaqnq21.jpg"></img>
+        <p>Meme 3</p>
+    </div>
+
+    <div class="imageGroup">
+        <img src="images/programming-or-googling.jpg"></img>
+        <p>Meme 4</p>
+    </div>
+
+    <script>
+        let imageDiv = document.getElementsByClassName("imageGroup");
+        let length = imageDiv.length
+        for (let i = 0; i < length; i++) {
+            imageDiv[i].style.border = "5px solid red";
+        }
+
+
+        const addImageAlt = document.querySelectorAll("div.imageGroup:not(.alt)");
+        addImageAlt.forEach(addImageAlt => 
+        {
+            addImageAlt.setAttribute("alt", "graffiti image")
+        });
+    </script>
+</body>
+
+</html>
